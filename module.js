@@ -69,8 +69,3 @@ var AjaxSheet = (function(){
        
     return AjaxSheet;
 })();
-
-
-//var me = new AjaxSheet();
-//me.post('https://docs.google.com/forms/d/e/1FAIpQLSfdquNEMR9AqeNhUtd10-BGE9pgWCpwvgG4TJ24psnR2reotQ/formResponse', 'JSON', {"entry.1306333158": "vishalchopra",  "entry.2085862806": "vishalchopra@gmail.com", "entry.1460306510":
-//                            "9836929535", "entry.1942733698": "525" });
