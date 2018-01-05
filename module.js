@@ -11,20 +11,17 @@
 
 var AjaxSheet = (function(){
     function AjaxSheet(){
-        this.data = false;
         //console.log("This is a constructor!");
     }
     
     // To save the form value into the users local storage
     function save(data){
    		localStorage.setItem('data', JSON.stringify(data));
-        console.log("This is a save function");
     };
     
     function load(item){
     	// Load the data from the local storage
         this._data = JSON.parse(localStorage.getItem(item));
-        console.log("This is a load function");
     };
     
     // send post request
