@@ -16,7 +16,7 @@ var AjaxSheet = (function(){
     
     // To save the form value into the users local storage
     function save(data){
-   		localStorage.setItem('data', JSON.stringify(data));
+   	localStorage.setItem('data', JSON.stringify(data));
     };
     
     function load(item){
@@ -27,12 +27,12 @@ var AjaxSheet = (function(){
     // send post request
     AjaxSheet.prototype.get = function(getUrl, data_type, callback){
     	$.ajax({
-        	type: 'GET',
+            type: 'GET',
             url: getUrl,
             dataType: data_type,        
             success: function(data){
-                save(data);  // save the data into the local storage
-                load('data'); // load the data from the local storage
+               // save(data);  // save the data into the local storage
+               // load('data'); // load the data from the local storage
                 callback(data); // callback function
             },
             error: function(e){
